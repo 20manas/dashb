@@ -1,0 +1,125 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+#results {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.result {
+    display: inline-block;
+    padding: 5px;
+    min-width: 600px;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Lucida Console', monospace;
+}
+
+.result.odd {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.result span.page {
+    color: goldenrod;
+}
+
+.result.highlight {
+    color: skyblue !important;
+}
+
+.result.highlight span.page {
+    color: blue !important;
+}
+
+.result.select {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+.result.select span.page{
+    color: green;
+    text-decoration: underline;
+}
+
+#results.stretch .result{
+    display: block;
+}
+
+hr {
+    background-color: white;
+}
+
+h2,
+label,
+header span {
+    font-family: 'Lato', 'Open Sans', 'Roboto', 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+label {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#filtered-docs {
+    display: block;
+}
+
+input {
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.doc-name {
+    display: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: darkcyan;
+}
+
+.doc-name-show {
+    display: inline-table;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    background-color: darkslategray;
+}
+
+footer {
+    width: calc(100vw - 20px);
+    height: 20px;
+    padding: 0 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: darkslategray;
+}
+
+footer span {
+    position: relative;
+    margin: 0 15px;
+    font-family: 'Lucida Console', monospace;
+}
+
+#mode {
+    text-transform: uppercase;
+}

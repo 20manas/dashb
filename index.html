@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DashB</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <label for="query">Query</label>
+        <input type="text" id="query" onfocus="this.value = this.value; handler.buttons['KeyI']()"
+            onblur="handler.buttons['Escape']()">
+        <label for="query">Filter</label>
+        <input type="text" id="filter" onfocus="this.value = this.value; handler.buttons['KeyF']()"
+            onblur="handler.buttons['Escape']()">
+        <input type="button" id="search" value="Search" onclick="handler.buttons['Enter']()">
+        <br>
+        <span id="filtered-docs"></span>
+    </header>
+    <main id="results">
+        <a class="result" href=""></a>
+    </main>
+    <footer>
+        <span id="mode"></span>
+        <span>Number: <span id="number"></span></span>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
